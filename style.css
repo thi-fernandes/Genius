@@ -1,0 +1,57 @@
+body {
+    background-image:url(img/fundo.jpg);
+} 
+.timer {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#vermelho { 
+    background-color: red;
+    height: 30vh;
+    width: 30vh;
+    
+
+}
+
+#verde { 
+    background-color: green;
+    height: 30vh;
+    width: 30vh;
+    
+
+}
+
+#amarelo { 
+    background-color:yellow;
+    height: 30vh;
+    width: 30vh;
+    
+
+}
+#azul { 
+    background-color:blue;
+    height: 30vh;
+    width: 30vh;
+
+}
+.main-ativo{
+    display: none;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content:stretch;
+    height: 87vh;
+    opacity: 1;
+}
+ 
+#button {
+    display: flex;
+    flex-direction:column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    height: 100vh;
+}
