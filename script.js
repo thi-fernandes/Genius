@@ -2,6 +2,15 @@
 const pMinutos = document.querySelector('.minutos');
 const pSegundos = document.querySelector('.segundos');
 let interval;
+let quadradinho = document.querySelector('.main-ativo');
+let button = document.querySelector("cust");
+let div = document.querySelector("#button");
+
+function quadrados() {
+    quadradinho.style.display = "flex";
+    cust.style.display = "none";
+    div.style.display = "none";
+}
 
 const atualizarParagrafos = function (minutos, segundos) {
     pMinutos.innerHTML = minutos;
@@ -21,7 +30,7 @@ const atualizarTimer = function () {
     if (segundo === 0) {
         if (minuto === 0) {
             clearInterval(interval);
-            //clearTimeout(valor)
+            
         }
         else {
             minuto--;
@@ -33,15 +42,11 @@ const atualizarTimer = function () {
         segundo--;
     }
 
-    
+
     atualizarParagrafos(minuto, segundo);
 }
 
-// setTimeout(atualizarTime, 1000);
-
-let button = document.querySelector("#button")
-
-button.onclick = iniciarJogo 
-
-
-
+cust.onclick = function () {
+    quadrados();
+    iniciarJogo();
+};
